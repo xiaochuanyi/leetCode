@@ -39,7 +39,7 @@ public class LongString {
         return max;
     }
     public static void main(String args[]){
-            String s = "abcabcbb";
+            String s = "abcabcccccc";
         System.out.println(getLongString(s));
     }
 }
