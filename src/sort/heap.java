@@ -49,6 +49,9 @@ public class heap {
         heap(a);
         for (int i:a) {
          System.out.println(i);
+         Object object = new Object();
+         object.equals(new Object());
+         object.hashCode();
         }
     }
 }
