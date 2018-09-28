@@ -9,6 +9,7 @@ import java.util.Scanner;
  * https://www.cnblogs.com/hutonm/p/5624996.html
  */
 public class factorial {
+    //非递归版本
     public static int factorial(int a){
         int num = 0;
         while (a != 0){
@@ -17,9 +18,17 @@ public class factorial {
         }
         return  num;
     }
+    //递归版本
+    public static int fn(int n){
+        if(n < 5){
+            return 0;
+        }else{
+            return (n / 5) + fn(n / 5);
+        }
+    }
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        System.out.println(factorial(a));
+        System.out.println(fn(a));
     }
 }
